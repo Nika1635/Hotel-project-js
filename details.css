@@ -367,6 +367,11 @@ td{
   margin-bottom: -1px;
 }
 
+form input{
+    background-color: white;
+}
+
+
 
 
 .tab {

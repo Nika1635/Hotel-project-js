@@ -96,6 +96,10 @@ nav {
 
 }
 
+form input{
+    background-color: white;
+}
+
 .roomtype:hover{
     background-color: #eeeeee;
 }
