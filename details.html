@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./details.css">
+</head>
+<body>
+    <div id="hero-cont">
+        <div class="h-container">
+            <nav class="none">
+                <ul id="navigation">
+                    <li><button onclick="toHome()">Home</button></li>
+                    <li class="light"><button onclick="toRooms()">Rooms</button></li>
+                    <li><button onclick="toHotels()">Hotels</button></li>
+                    <li><button onclick="toBooks()">Booked Rooms</button></li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars burgerbar"></i>
+        </div>
+        <section id="roomInfo">
+            <div id="roomPhotos">
+                <img src="" alt="" id="photo">
+                <i class="fa-solid fa-arrow-left" id="previous"></i>
+                <i class="fa-solid fa-arrow-right" id="next"></i>
+            </div>
+            <form id="book">
+                <h1>Reservation</h1>
+                <div id="roomPrice">
+                    <p class="roomname">Premium Room</p>
+                    <p class="price">€199 <span>a night</span></p>
+                </div>
+                    <div class="reservation-info">
+                        <label for="checkInDate">check-in</label>
+                        <input type="date" name="checkInDate" id="checkInDate" value="" required>
+                    </div>
+                    <div class="reservation-info">
+                        <label for="checkOutDate">check-out</label>
+                        <input type="date" name="checkOutDate" id="checkOutDate" value="" required>
+                    </div>
+                    <div class="reservation-info">
+                        <label for="customerName">Customer Name</label>
+                        <input type="text" name="customerName" id="" value="" placeholder="Please enter your name" required>
+                    </div>
+                    <div class="reservation-info">
+                        <label for="customerPhone">Phone Number</label>
+                        <input type="number" name="customerPhone" id="" value="" placeholder="Please enter phone number" required>
+                    </div>
+                    <div id="roomTotal">
+                        <p class="roomname">Total Price:</p>
+                        <p class="totalprice">€0</p>
+                    </div>
+                    <input type="submit" name="" id="bookingapply" value="Book Now">
+            </form>
+        </section>
+        <section class="information">
+            <div class="roomDetails">
+                <h1>Room Details</h1>
+                <div class="roomDetails-info">
+                    <h3>Table overview</h3>
+                    <table class="overview-table">
+                        <tr>
+                            <td><i class="fa-solid fa-check check"></i>Double Bed</td>
+                            <td><i class="fa-solid fa-check check"></i>Double Bed</td>
+                            <td><i class="fa-solid fa-check check"></i>Free Newspaper</td>
+                            
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-check check"></i>60 square meter</td>
+                            <td><i class="fa-solid fa-check check"></i>Beach view</td>
+                            <td><i class="fa-solid fa-check check"></i>2 persons</td>
+                            
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-check check"></i>Double Bed</td>
+                            <td><i class="fa-solid fa-check check"></i>Free Internet</td>
+                            <td><i class="fa-solid fa-check check"></i>Breakfast included</td>
+                            
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-check check"></i>Private Balcony</td>
+                            <td><i class="fa-solid fa-check check"></i>Flat Screen TV</td>
+                            <td><i class="fa-solid fa-check check"></i>Jacuzzi</td>
+                            
+                        </tr>
+                    </table>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nibh, cursus id euismod non, scelerisque nec nibh. Nam semper, ligula a rhoncus fermentum, libero lacus vulputate felis, id auctor mauris urna quis diam.</p>
+                </div>
+            </div>
+            <div class="overview">
+                <h1>Overview</h1>
+                <div class="overview-info">
+                    <ul class="tabs">
+                        <li data-tab-target="#home" class="tab active">Overview</li>
+                        <li data-tab-target="#pricing" class="tab">Facilities</li>
+                        <li data-tab-target="#about" class="tab">Extra</li>
+                      </ul>
+                      
+                      <div class="tab-content">
+                        <div id="home" data-tab-content class="active disable">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum eleifend augue, quis rhoncus purus fermentum. In hendrerit risus arcu, in eleifend metus dapibus varius. Nulla dolor sapien, laoreet vel tincidunt non, egestas non justo. Phasellus et mattis lectus, et gravida urna.</p>
+                            <div>
+                                <img class="imagess" src="https://hotelbooking.stepprojects.ge/images/tab/restaurant-01.jpg" alt="">
+                                <p>pretium sem non tincidunt iaculis. Nunc at pharetra eros, a varius leo. Mauris id hendrerit justo. Mauris egestas magna vitae nisi ultricies semper. Nam vitae suscipit magna. Nam et felis nulla. Ut nec magna tortor. Nulla dolor sapien, laoreet vel tincidunt non, egestas non justo.</p>
+                            </div>
+                        </div>  
+                        <div id="pricing" data-tab-content class="disable">
+                            <p>Phasellus sodales justo felis, a vestibulum risus mattis vitae. Aliquam vitae varius elit, non facilisis massa. Vestibulum luctus diam mollis gravida bibendum. Aliquam mattis velit dolor, sit amet semper erat auctor vel. Integer auctor in dui ac vehicula. Integer fermentum nunc ut arcu feugiat, nec placerat nunc tincidunt. Pellentesque in massa eu augue placerat cursus sed quis magna.</p>
+                        </div>
+                        <div id="about" data-tab-content class="disable">
+                            <p>Aa vestibulum risus mattis vitae. Aliquam vitae varius elit, non facilisis massa. Vestibulum luctus diam mollis gravida bibendum. Aliquam mattis velit dolor, sit amet semper erat auctor vel. Integer auctor in dui ac vehicula. Integer fermentum nunc ut arcu feugiat, nec placerat nunc tincidunt. Pellentesque in massa eu augue placerat cursus sed quis magna.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section id="other-rooms">
+            <h1>Other Rooms</h1>
+            <div class="room-cards">
+                
+            </div>
+        </section>
+
+        <footer></footer>
+    </div>
+
+
+    <script src="./details.js"></script>
+    <script src="https://kit.fontawesome.com/75af7b419f.js" crossorigin="anonymous"></script>
+</body>
+</html>

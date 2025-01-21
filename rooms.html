@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./rooms.css">
+</head>
+<body>
+    <div id="hero-cont">
+        <div class="h-container">
+            <nav class="none">
+                <ul id="navigation">
+                    <li><button onclick="toHome()">Home</button></li>
+                    <li class="light"><button onclick="toRooms()">Rooms</button></li>
+                    <li><button onclick="toHotels()">Hotels</button></li>
+                    <li><button onclick="toBooks()">Booked Rooms</button></li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars burgerbar"></i>
+        </div>
+        <div class="filter-container">
+            <div id="roomtype-list">
+                <button class="all-roomtype" onclick="diplayall()">All</button>
+            </div>
+            <form id="filter">
+                <div class="range">
+                    <p>Price Per Night</p>
+                    <div class="range-slider">
+                      <span class="range-selected"></span>
+                    </div>
+                    <div class="range-input">
+                      <input type="range" class="min" min="0" max="1000" value="0" step="1">
+                      <input type="range" class="max" min="0" max="1000" value="1000" step="1">
+                    </div>
+                    <div class="range-price">      
+                      <label for="priceFrom">Min</label>
+                      <input type="number" name="priceFrom" value="0" class="minn">      
+                      <label for="priceTo">Max</label>
+                      <input type="number" name="priceTo" value="1000" class="maxx">      
+                    </div>
+                  </div> 
+                    <div class="room-type">
+                        <label for="roomTypeId">Room Type</label>
+                        <select name="roomTypeId" id="roomtypeselect">
+                            <option selected="selected" disabled="disabled" value="Select a room">Select a room</option>
+                            <option value="1">Single Room</option>
+                            <option value="2">Double Room</option>
+                            <option value="3">Deluxe Room</option>
+                        </select>
+                    </div>
+
+                    <div class="room-type">
+                        <label for="checkIn">check-in</label>
+                        <input type="date" name="checkIn" id="" value="" >
+                    </div>
+
+                    <div class="room-type">
+                        <label for="checkOut">check-out</label>
+                        <input type="date" name="checkOut" id="" value="" >
+                    </div>
+                    <div class="guest">
+                        <label for="maximumGuests">Guests</label>
+                        <select name="maximumGuests" id="roomtypeselect">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <input type="submit" name="" id="applyfilter">
+            </form>
+
+            
+        <div class="room-cards">
+        </div>
+    </div>
+
+    
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+
+    <script src="./rooms.js"></script>
+    <script src="https://kit.fontawesome.com/75af7b419f.js" crossorigin="anonymous"></script>
+</body>
+</html>
