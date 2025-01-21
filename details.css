@@ -550,7 +550,7 @@ td{
 
 
 
-@media (max-width: 720px) {
+@media (max-width: 740px) {
 
     nav {
         padding: 10px 0;
@@ -567,6 +567,7 @@ td{
         max-width: 1000px;
         margin: 0;
         padding: 0;    
+        height: 75px;
     }
 
     .h-container > i{
@@ -582,7 +583,7 @@ td{
         z-index: 20;
         background-color: white;
         width: 100%;
-        margin-top: 400px;
+        margin-top: 350px;
         height: 300px;
     }
 

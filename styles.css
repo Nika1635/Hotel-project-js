@@ -287,7 +287,7 @@ footer{
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 740px) {
 
     #background-section button {
         padding: 8px 18px;
@@ -332,7 +332,8 @@ footer{
         width: 100%;
         max-width: 1000px;
         margin: 0;
-        padding: 0;    
+        padding: 0; 
+        height: 70px;   
     }
 
     .h-container > i{
@@ -348,7 +349,7 @@ footer{
         z-index: 20;
         background-color: white;
         width: 100%;
-        margin-top: 400px;
+        margin-top: 350px;
         height: 300px;
     }
 

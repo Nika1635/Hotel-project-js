@@ -251,6 +251,7 @@ nav {
     align-items: center;
     padding: 10px;
     font-weight: 700;
+    color: #5E5E5E;
 }
 
 .room-card > button {
@@ -459,6 +460,7 @@ footer{
         max-width: 1000px;
         margin: 0;
         padding: 0;    
+        height: 75px;
     }
 
     .h-container > i{
@@ -474,7 +476,7 @@ footer{
         z-index: 20;
         background-color: white;
         width: 100%;
-        margin-top: 400px;
+        margin-top: 350px;
         height: 300px;
     }
 

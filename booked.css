@@ -153,6 +153,7 @@ td > button{
         max-width: 1000px;
         margin: 0;
         padding: 0;    
+        height: 75px;
     }
 
     .h-container > i{
@@ -168,7 +169,7 @@ td > button{
         z-index: 20;
         background-color: white;
         width: 100%;
-        margin-top: 400px;
+        margin-top: 350px;
         height: 300px;
     }
 
