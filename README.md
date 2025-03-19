@@ -1,1 +1,1 @@
-# hotrl-project
+# hotel-project
